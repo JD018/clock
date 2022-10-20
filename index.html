@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NeoCity Teacher Clock</title>
+        <link rel="stylesheet" href='light.css' id="main">
+
+        <script src="initiate.js"></script>
+    </head>
+
+    <body>
+        <div class="left column">
+            <img src="logo.png" class="logo">
+        </div>
+
+        <div class="middle column">
+            <div class="offset">
+                <button class="time" id="time">
+                    ??:??:?? ?
+                </button>
+            </div>
+            <button class="date" id="date">
+                ?, ? ?
+            </button>
+            <br>
+            <br>
+            <br>
+            <button class="class" id="class">
+                ?
+            </button>
+            <br>
+            <button class="remaining" id="remaining">
+                ??:?? ?
+            </button>
+            <br>
+            <br>
+            <br>
+            <div class="indicator"><span style="width: 0%" id="indicator"></span></div>
+            <br>
+            <br>
+            <button class="selector" onclick="aday()" id="selectora">A-Day</button>
+            <button class="selector" onclick="bday()" id="selectorb">B-Day</button>
+            <button class="selector" onclick="cday()" id="selectorc">C-Day</button>
+            <button class="selector" onclick="dday()" id="selectord">D-Day</button>
+
+            <!-- <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <button class="selector">B-Lunch</button> -->
+            
+        </div>
+        
+        <div class="right column">
+            <input type="image" src="settings.svg" class="settings" onclick="window.open('settings.html', target='_self')">
+        </div>
+
+        <span style="position: absolute; bottom: 30px; right: 0px;"><button class="selector" style="width: 80%; height: 4%;">Programmed by Jadon Duff</button></span>
+    
+        <script src="run.js"></script>
+    </body>
+</html>

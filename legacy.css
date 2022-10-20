@@ -1,0 +1,223 @@
+html {
+    text-align: center;
+    overflow: hidden;
+    background-color: black;
+}
+
+.offset {
+    padding-top: 7%;
+}
+.time {
+    font-family: monospace;
+    font-size: 64px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-width: 5px;
+    transition: 0.9s;
+    width: 50%;
+    color: white;
+}
+.time:hover {
+    font-family: monospace;
+    font-size: 72px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    border-width: 5px;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.date {
+    font-family: monospace;
+    font-size: 22px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 1.5%;
+    border-top-width: 0%;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    transition: 0.9s;
+    color: white;
+}
+.date:hover {
+    font-family: monospace;
+    font-size: 28px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 1.5%;
+    border-top-width: 0%;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.class {
+    font-family: monospace;
+    font-size: 30px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-width: 5px;
+    transition: 0.9s;
+    width: 35%;
+    color: white;
+}
+.class:hover {
+    font-family: monospace;
+    font-size: 37px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    border-width: 5px;
+    transition: 0.4s;
+}
+.remaining {
+    font-family: monospace;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    padding: 1%;
+    border-top-width: 0%;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    transition: 0.9s;
+    color: white;
+}
+.remaining:hover {
+    font-family: monospace;
+    font-size: 22px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-top-width: 0%;
+    border-bottom-width: 5px;
+    border-left-width: 5px;
+    border-right-width: 5px;
+    transition: 0.4s;
+}
+
+.column {
+    float: left;
+}
+.left {
+    width: 15%;
+}
+.middle {
+    width: 70%;
+}
+.right {
+    width: 15%;
+}
+.logo {
+    width: 90%;
+    height: auto;
+    padding-left: 10%;
+    padding-top: 4%;
+}
+
+.indicator {
+    display: flex;
+    height: 14px;
+    width: 50%;
+    background: rgba(25, 25, 25, 0.85);
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: inset 0 -1px 1px rgba(225, 225, 225, 0.85);
+    overflow: hidden;
+    white-space: nowrap;
+    border: 2px solid white;
+    margin: 0 auto;
+}
+.indicator > span {
+    height: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: turquoise;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.selector {
+    font-family: monospace;
+    font-size: 16px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    padding-top: 0.75%;
+    padding-bottom: 0.75%;
+    padding-left: 3%;
+    padding-right: 3%;
+    border-width: 5px;
+    transition: 0.9s;
+    width: 20%;
+    color: white;
+}
+.selector:hover {
+    font-family: monospace;
+    font-size: 28px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-radius: 20px;
+    border-width: 5px;
+    transition: 0.4s;
+}
+
+.settings {
+    color: black;
+    padding: 5%;
+    width: 20%;
+    height: auto;
+    float: right;
+    filter: opacity(50%) invert(100%);
+    transform: rotate(0deg);
+    transition: 0.4s;
+    color: white;
+}
+.settings:hover {
+    color: black;
+    padding: 5%;
+    width: 22%;
+    height: auto;
+    float: right;
+    filter: opacity(70%) invert(100%);
+    transform: rotate(45deg);
+    transition: 0.2s;
+}

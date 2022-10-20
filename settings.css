@@ -1,0 +1,43 @@
+html {
+    font-family: monospace;
+    font-size: 24px;
+    overflow: hidden;
+}
+
+input {
+    border-color: rgb(104, 171, 228);
+    border-radius: 8px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 18px;
+    font-family: monospace;
+    transition: 0.9s;
+}
+input:hover {
+    border-color: rgb(104, 171, 228);
+    border-radius: 8px;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 21px;
+    font-family: monospace;
+    transition: 0.4s;
+}
+
+button {
+    border-color: rgb(104, 171, 228);
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 18px;
+    font-family: monospace;
+    transition: 0.9s;
+}
+button:hover {
+    border-color: rgb(104, 171, 228);
+    border-radius: 15px;
+    border-width: 5px;
+    border-style: solid;
+    font-size: 24px;
+    font-family: monospace;
+    transition: 0.4s;
+}
