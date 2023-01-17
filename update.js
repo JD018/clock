@@ -11,16 +11,6 @@ if (localStorage.getItem('bdaylunch') === 'b') {
     setblunchb()
 }
 
-if (localStorage.getItem('light') === 'light') {
-    setlight()
-}
-if (localStorage.getItem('light') === 'dark') {
-    setdark()
-}
-if (localStorage.getItem('light') === 'legacy') {
-    setlegacy()
-}
-
 if (localStorage.getItem('c1') !== null) {
     document.getElementById('c1').value = localStorage.getItem('c1')
 }

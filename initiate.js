@@ -11,7 +11,7 @@ if (localStorage.getItem('setup') === 'true') {
     c6 = localStorage.getItem('c6')
 } else {
     localStorage.setItem('time', '12')
-    localStorage.setItem('light', 'light')
+    localStorage.setItem('light', 'legacy')
     localStorage.setItem('bdaylunch', 'b')
     localStorage.setItem('adaylunch', 'a')
 

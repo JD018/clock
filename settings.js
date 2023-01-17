@@ -20,18 +20,6 @@ function setblunchb() {
     document.getElementById('3').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
 }
 
-function setlight() {
-    localStorage.setItem('light', 'light')
-    document.getElementById('5').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('6').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
-    document.getElementById('7').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
-}
-function setdark() {
-    localStorage.setItem('light', 'dark')
-    document.getElementById('6').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('5').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
-    document.getElementById('7').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
-}
 function setlegacy() {
     localStorage.setItem('light', 'legacy')
     document.getElementById('7').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'

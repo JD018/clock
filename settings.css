@@ -5,7 +5,7 @@ html {
 }
 
 input {
-    border-color: rgb(104, 171, 228);
+    border-color: rgb(0, 200, 255);
     border-radius: 8px;
     border-width: 3px;
     border-style: solid;
@@ -14,7 +14,7 @@ input {
     transition: 0.9s;
 }
 input:hover {
-    border-color: rgb(104, 171, 228);
+    border-color: rgb(0, 200, 255);
     border-radius: 8px;
     border-width: 3px;
     border-style: solid;
@@ -24,7 +24,7 @@ input:hover {
 }
 
 button {
-    border-color: rgb(104, 171, 228);
+    border-color: rgb(0, 200, 255);
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
@@ -33,7 +33,7 @@ button {
     transition: 0.9s;
 }
 button:hover {
-    border-color: rgb(104, 171, 228);
+    border-color: rgb(0, 200, 255);
     border-radius: 15px;
     border-width: 5px;
     border-style: solid;
