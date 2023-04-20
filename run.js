@@ -228,11 +228,11 @@ function render() {
             secl = "0" + secl
         }
         if (hrl !== 0) {
-            document.getElementById('remaining').innerHTML = hrl + ":" + minl + ":" + secl + " until Escape"
+            document.getElementById('remaining').innerHTML = hrl + ":" + minl + ":" + secl + " Remaining"
         } else if (minl !== '00') {
-            document.getElementById('remaining').innerHTML = minl + ":" + secl + " until Escape"
+            document.getElementById('remaining').innerHTML = minl + ":" + secl + " Remaining"
         } else {
-            document.getElementById('remaining').innerHTML = secl + " Seconds until Escape"
+            document.getElementById('remaining').innerHTML = secl + " Seconds Remaining"
         }
 
         document.getElementById('class').innerHTML = classArray[instance]
