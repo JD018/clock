@@ -2,6 +2,7 @@ html {
     text-align: center;
     overflow: hidden;
     background-color: black;
+    padding: 1%;
 }
 
 .offset {
@@ -9,38 +10,39 @@ html {
 }
 .time {
     font-family: monospace;
-    font-size: 64px;
+    font-size: 36px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     padding-top: 0.75%;
     padding-bottom: 0.75%;
     padding-left: 3%;
     padding-right: 3%;
     border-width: 5px;
     transition: 0.9s;
-    width: 50%;
+    width: 80%;
     color: white;
 }
 .time:hover {
     font-family: monospace;
-    font-size: 72px;
+    font-size: 42px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     border-width: 5px;
     transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .date {
     font-family: monospace;
     font-size: 22px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     padding: 1.5%;
@@ -56,9 +58,9 @@ html {
     font-size: 28px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
     padding: 1.5%;
@@ -67,65 +69,81 @@ html {
     border-left-width: 5px;
     border-right-width: 5px;
     transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 .class {
     font-family: monospace;
-    font-size: 24px;
+    font-size: 30px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     padding-top: 0.75%;
     padding-bottom: 0.75%;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
     border-width: 5px;
     transition: 0.9s;
-    width: 35%;
+    width: 50%;
     color: white;
 }
 .class:hover {
     font-family: monospace;
-    font-size: 27px;
+    font-size: 37px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     border-width: 5px;
     transition: 0.4s;
 }
-.remaining {
+.keep {
     font-family: monospace;
     font-size: 17px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0px;
+    border-color: turquoise;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: 20px;
     border-top-right-radius: 0px;
     padding: 1%;
-    border-top-width: 0%;
+    border-top-width: 5px;
     border-bottom-width: 5px;
     border-left-width: 5px;
+    border-right-width: 2.5px;
+    transition: 0.9s;
+    color: white;
+    white-space: nowrap;
+}
+.keep:hover {
+    font-family: monospace;
+    font-size: 22px;
+    transition: 0.4s;
+}
+
+.remove {
+    font-family: monospace;
+    font-size: 17px;
+    background-color: transparent;
+    border-style: solid;
+    border-color: turquoise;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 20px;
+    padding: 1%;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+    border-left-width: 2.5px;
     border-right-width: 5px;
     transition: 0.9s;
     color: white;
+    white-space: nowrap;
 }
-.remaining:hover {
+.remove:hover {
     font-family: monospace;
     font-size: 22px;
-    background-color: transparent;
-    border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-top-width: 0%;
-    border-bottom-width: 5px;
-    border-left-width: 5px;
-    border-right-width: 5px;
     transition: 0.4s;
 }
 
@@ -133,13 +151,10 @@ html {
     float: left;
 }
 .left {
-    width: 15%;
+    width: 30%;
 }
 .middle {
-    width: 70%;
-}
-.right {
-    width: 15%;
+    width: 55%;
 }
 .logo {
     width: 90%;
@@ -152,13 +167,13 @@ html {
     display: flex;
     height: 14px;
     width: 50%;
-    background: rgb(0, 0, 0);
+    background: rgba(25, 25, 25, 0.85);
     border-radius: 25px;
     padding: 10px;
-    /* box-shadow: inset 0 -1px 1px rgba(225, 225, 225, 0.85); */
+    box-shadow: inset 0 -1px 1px rgba(225, 225, 225, 0.85);
     overflow: hidden;
     white-space: nowrap;
-    border: 4px solid rgb(228, 104, 104);
+    border: 2px solid white;
     margin: 0 auto;
 }
 .indicator > span {
@@ -167,7 +182,7 @@ html {
     border-bottom-right-radius: 8px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    background-color: rgb(228, 104, 104);
+    background-color: turquoise;
     overflow: hidden;
     white-space: nowrap;
 }
@@ -176,8 +191,8 @@ html {
     font-size: 16px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     padding-top: 0.75%;
     padding-bottom: 0.75%;
     padding-left: 3%;
@@ -187,16 +202,16 @@ html {
     width: 20%;
     color: white;
 }
-.selector:hover {
+/* .selector:hover {
     font-family: monospace;
     font-size: 28px;
     background-color: transparent;
     border-style: solid;
-    border-color: rgb(228, 104, 104);
-    border-radius: 15px;
+    border-color: turquoise;
+    border-radius: 20px;
     border-width: 5px;
     transition: 0.4s;
-}
+} */
 
 .settings {
     color: black;
@@ -210,7 +225,7 @@ html {
     color: white;
 }
 .settings:hover {
-    color: white;
+    color: black;
     padding: 5%;
     width: 22%;
     height: auto;
@@ -219,7 +234,6 @@ html {
     transform: rotate(45deg);
     transition: 0.2s;
 }
-
 
 .picker {
     color: white;

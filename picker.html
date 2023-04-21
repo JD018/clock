@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NeoCity Teacher Clock</title>
+        <link rel="stylesheet" href='picker.css' id="main">
+        <link rel="icon" type="image/png" href="https://th.bing.com/th/id/R.02b192d16c181c186d67cf9aa9ae8830?rik=b40VU5gKbq1VuQ&riu=http%3a%2f%2fclipart-library.com%2fimages_k%2fclock-clipart-transparent%2fclock-clipart-transparent-8.png&ehk=pZdIqjCxn1RQBtzCZL6DqWhGabpoyj60aHu7%2blyN3z0%3d&risl=&pid=ImgRaw&r=0" sizes="16x16">
+
+        <script src="initiate2.js"></script>
+    </head>
+
+    <body>
+        <div class="left column">
+            <br><br><br><br><br><br><br><br><br><br>
+            <button class="time" id="pickedStudent">
+                ???
+            </button>
+            <br><br><br><br><br><br><br><br><br>
+            <button class="keep" onclick="keep()">
+                Keep & Pick New
+            </button>
+            <button class="remove" onclick="remove()">
+                Remove & Pick New
+            </button>
+        </div>
+
+        <div class="middle column" id="names">
+        </div>
+
+        <span style="position: absolute; bottom: 90px; right: 100px;"><input class="selector" style="width: 60%; height: 4%;" placeholder="Period #" id="period_index"></span>
+        <!-- Dropdown instead -->
+        <span style="position: absolute; bottom: 90px; right: 50px;"><button class="selector" style="width: 50px; height: 4%;" placeholder="Period #" onclick="setupMain()">Run</button></span>
+
+        <span style="position: absolute; bottom: 30px; right: 0px;"><button class="selector" style="width: 80%; height: 4%;">Programmed by Jadon Duff & Chris Andris</button></span>
+    
+        <script src="run.js"></script>
+    </body>
+</html>

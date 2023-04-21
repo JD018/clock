@@ -221,3 +221,23 @@ html {
     transform: rotate(45deg);
     transition: 0.2s;
 }
+
+.picker {
+    color: white;
+    padding: 5%;
+    width: 20%;
+    height: auto;
+    float: right;
+    filter: opacity(50%) invert(100%);
+    transform: scale(0.85) translateY(-5%);
+    transition: 0.4s;
+}
+.picker:hover {
+    color: white;
+    padding: 5%;
+    height: auto;
+    float: right;
+    filter: opacity(70%) invert(100%);
+    transform: scale(0.85) translateY(-5%);
+    transition: 0.2s;
+}
