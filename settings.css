@@ -1,7 +1,7 @@
 html {
     font-family: monospace;
     font-size: 24px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 input {
