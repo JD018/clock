@@ -1,0 +1,16 @@
+{
+  "background_color": "#00c8ff",
+  "description": "Clock provides a visual representation of the NeoCity Academy bell schedule. It displays the current time, current period, time left in the current period, a period progress bar, and the current block schedule variation.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "NeoCity Clock",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "Clock",
+  "start_url": "/",
+  "theme_color": "#00c8ff",
+  "categories": [],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
