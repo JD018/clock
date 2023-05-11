@@ -1,6 +1,6 @@
 caches.open("pwa-assets")
 .then(cache => {
-  cache.addAll(
+  /*cache.addAll(
     [
       "/index.html",
       "/manifest.json",
@@ -10,5 +10,6 @@ caches.open("pwa-assets")
       "/scripts/",
       "/styles/"
     ]
-    ); 
+    );*/
+  cache.add("index.html");
 });
