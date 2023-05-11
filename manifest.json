@@ -1,39 +1,44 @@
 {
-  "background_color": "#00c8ff",
-  "description": "Clock provides a visual representation of the NeoCity Academy bell schedule. It displays the current time, current period, time left in the current period, a period progress bar, and the current block schedule variation.",
-  "dir": "ltr",
-  "display": "standalone",
-  "name": "NeoCity Clock",
-  "orientation": "any",
-  "scope": "/",
-  "short_name": "Clock",
-  "start_url": "/",
-  "theme_color": "#00c8ff",
-  "categories": [],
-  "screenshots": [
-    {
-      "src": "screenshot.png",
-      "sizes": "1920x896",
-      "type": "image/png",
-      "platform": "wide"
-    }
-  ],
-  "icons": [
-  {
-      "src": "/icon.jfif",
-      "sizes": "474x474",
-      "type": "image/jfif",
-      "purpose": "any"
+    "background_color": "#00c8ff",
+    "description": "Clock provides a visual representation of the NeoCity Academy bell schedule. It displays the current time, current period, time left in the current period, a period progress bar, and the current block schedule variation.",
+    "dir": "ltr",
+    "display": "standalone",
+    "name": "NeoCity Clock",
+    "orientation": "landscape",
+    "scope": "/",
+    "short_name": "Clock",
+    "start_url": "/index.html",
+    "theme_color": "#00c8ff",
+    "categories": [
+      "productivity"
+    ],
+    "screenshots": [
+        {
+         "src": "screenshot.png",
+         "sizes": "1920x896",
+         "type": "image/png",
+         "platform": "wide"   
+        }
+    ],
+    "icons": [
+        {
+            "src": "/icon.png",
+            "sizes": "474x474",
+            "type": "image/png",
+            "purpose": "any"
+        }
+    ],
+    "shortcuts": [
+      {
+        "name": "Clock",
+        "url": "/index.html",
+        "description": "A visual representation of the NeoCity Academy bell schedule."
+      },
+      {
+        "name": "Settings",
+        "url": "/settings.html",
+        "description": "Clock Settings"
+      }
+    ],
+    "lang": "en"
   }
-  ],
-  "shortcuts": [
-    {
-      "name": "Clock",
-      "url": "/index.html"
-    },
-    {
-      "name": "Settings",
-      "url": "/settings.html"
-    }
-  ]
-}
