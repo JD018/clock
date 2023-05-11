@@ -1,9 +1,7 @@
-caches.open("pwa-assets")
-.then(cache => {
-  cache.add("index.html");
-  cache.add("settings.html");
-  cache.add("sw.js");
-  cache.addAll("/images");
-  cache.addAll("/scripts");
-  cache.addAll("/styles");
+const urlsToCache = ["/"];
+self.addEventListener("install", (event) => {
+   event.waitUntil(async () => {
+      const cache = await caches.open("pwa-assets");
+      return cache.addAll(urlsToCache);
+   });
 });
