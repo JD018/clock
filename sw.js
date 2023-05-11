@@ -3,7 +3,7 @@ caches.open("pwa-assets")
   cache.add("index.html");
   cache.add("settings.html");
   cache.add("sw.js");
-  cache.add("./images");
-  cache.add("./scripts");
-  cache.add("./styles");
+  cache.addAll("/images");
+  cache.addAll("/scripts");
+  cache.addAll("/styles");
 });
