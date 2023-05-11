@@ -32,11 +32,13 @@
       {
         "name": "Clock",
         "url": "/index.html",
+        "icons": [{ "src": "/clock_shortcut.png", "sizes": "96x96" }],
         "description": "A visual representation of the NeoCity Academy bell schedule."
       },
       {
         "name": "Settings",
         "url": "/settings.html",
+        "icons": [{ "src": "/clock_shortcut.png", "sizes": "96x96" }],
         "description": "Clock Settings"
       }
     ],
