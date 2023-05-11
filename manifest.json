@@ -10,7 +10,30 @@
   "start_url": "/",
   "theme_color": "#00c8ff",
   "categories": [],
-  "screenshots": [],
-  "icons": [],
-  "shortcuts": []
+  "screenshots": [
+    {
+      "src": "screenshot.png",
+      "sizes": "1920x896",
+      "type": "image/png",
+      "platform": "wide"
+    }
+  ],
+  "icons": [
+  {
+      "src": "/icon.jfif",
+      "sizes": "474x474",
+      "type": "image/jfif",
+      "purpose": "any"
+  }
+  ],
+  "shortcuts": [
+    {
+      "name": "Clock",
+      "url": "/index.html"
+    },
+    {
+      "name": "Settings",
+      "url": "/settings.html"
+    }
+  ]
 }
