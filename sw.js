@@ -1,9 +1,9 @@
-const CACHE_NAME = 'cool-cache';
+const CACHE_NAME = 'pwa-cache';
 
 // Add whichever assets you want to pre-cache here:
 const PRECACHE_ASSETS = [
     '/'
-]
+];
 
 // Listener for the install event - pre-caches our assets list on service worker install.
 self.addEventListener('install', event => {
