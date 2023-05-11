@@ -1,7 +1,9 @@
-const urlsToCache = ["index.html"];
-self.addEventListener("install", (event) => {
-   event.waitUntil(async () => {
-      const cache = await caches.open("pwa-assets");
-      return cache.add(urlsToCache);
-   });
+const urlsToCache = ["/"];
+self.addEventListener("install", event => {
+   event.waitUntil(
+      caches.open("pwa-assets")
+      .then(cache => {
+         return cache.addAll(urlsToCache);
+      });
+   );
 });
