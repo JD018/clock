@@ -7,14 +7,14 @@
     "orientation": "landscape",
     "scope": "/",
     "short_name": "Clock",
-    "start_url": "/index.html",
+    "start_url": "/",
     "theme_color": "#00c8ff",
     "categories": [
       "productivity"
     ],
     "screenshots": [
         {
-         "src": "screenshot.png",
+         "src": "./images/screenshot.png",
          "sizes": "1920x896",
          "type": "image/png",
          "platform": "wide"   
@@ -22,7 +22,7 @@
     ],
     "icons": [
         {
-            "src": "/icon.png",
+            "src": "./images/icon.png",
             "sizes": "422x422",
             "type": "image/png",
             "purpose": "any"
@@ -32,13 +32,13 @@
       {
         "name": "Clock",
         "url": "/index.html",
-        "icons": [{ "src": "/clock_shortcut.png", "sizes": "96x96" }],
+        "icons": [{ "src": "./images/clock_shortcut.png", "sizes": "96x96" }],
         "description": "A visual representation of the NeoCity Academy bell schedule."
       },
       {
         "name": "Settings",
         "url": "/settings.html",
-        "icons": [{ "src": "/clock_shortcut.png", "sizes": "96x96" }],
+        "icons": [{ "src": "./images/clock_shortcut.png", "sizes": "96x96" }],
         "description": "Clock Settings"
       }
     ],
