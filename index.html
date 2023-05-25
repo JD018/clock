@@ -43,6 +43,18 @@
     
         <script src="./scripts/run.js"></script>
         <script>
+            ddayoverride = true
+            if (ddayoverride === true) {
+                document.getElementById('selectora').style.display = 'none'
+                document.getElementById('selectorb').style.display = 'none'
+                document.getElementById('selectorc').style.display = 'none'
+                document.getElementById('selectore').style.display = 'none'
+                lunchtype = localStorage.getItem('bdaylunch')
+                daytype = 'd'
+                alert("Custom D-Day Configuration currently in effect.")
+            }
+        </script>
+        <script>
             if (window.addEventListener) {
     var keys = [],
         konami = "38,38,40,40,37,39,37,39,66,65,13";
