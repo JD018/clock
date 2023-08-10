@@ -21,25 +21,21 @@ if (daytype === 'a') {
     document.getElementById('selectorb').style.display = 'none'
     document.getElementById('selectorc').style.display = 'none'
     document.getElementById('selectord').style.display = 'none'
-    document.getElementById('selectore').style.display = 'none'
 }
 if (daytype === 'b') {
     document.getElementById('selectora').style.display = 'none'
     document.getElementById('selectorc').style.display = 'none'
     document.getElementById('selectord').style.display = 'none'
-    document.getElementById('selectore').style.display = 'none'
 }
 if (daytype === 'c') {
     document.getElementById('selectora').style.display = 'none'
     document.getElementById('selectorb').style.display = 'none'
     document.getElementById('selectord').style.display = 'none'
-    document.getElementById('selectore').style.display = 'none'
 }
 if (daytype === 'd') {
     document.getElementById('selectora').style.display = 'none'
     document.getElementById('selectorb').style.display = 'none'
     document.getElementById('selectorc').style.display = 'none'
-    document.getElementById('selectore').style.display = 'none'
 }
 if (daytype === 'e') {
     document.getElementById('selectora').style.display = 'none'
@@ -55,7 +51,6 @@ function daySelect() {
     document.getElementById('selectorb').style.display = 'initial'
     document.getElementById('selectorc').style.display = 'initial'
     document.getElementById('selectord').style.display = 'initial'
-    document.getElementById('selectore').style.display = 'initial'
     select = true
 }
 
@@ -64,7 +59,6 @@ function aday() {
         document.getElementById('selectorb').style.display = 'none'
         document.getElementById('selectorc').style.display = 'none'
         document.getElementById('selectord').style.display = 'none'
-        document.getElementById('selectore').style.display = 'none'
         lunchtype = localStorage.getItem('adaylunch')
         daytype = 'a'
         select = false
@@ -77,7 +71,6 @@ function bday() {
         document.getElementById('selectora').style.display = 'none'
         document.getElementById('selectorc').style.display = 'none'
         document.getElementById('selectord').style.display = 'none'
-        document.getElementById('selectore').style.display = 'none'
         lunchtype = localStorage.getItem('bdaylunch')
         daytype = 'b'
         select = false
@@ -90,7 +83,6 @@ function cday() {
         document.getElementById('selectora').style.display = 'none'
         document.getElementById('selectorb').style.display = 'none'
         document.getElementById('selectord').style.display = 'none'
-        document.getElementById('selectore').style.display = 'none'
         lunchtype = localStorage.getItem('bdaylunch')
         daytype = 'c'
         select = false
@@ -103,22 +95,8 @@ function dday() {
         document.getElementById('selectora').style.display = 'none'
         document.getElementById('selectorb').style.display = 'none'
         document.getElementById('selectorc').style.display = 'none'
-        document.getElementById('selectore').style.display = 'none'
         lunchtype = localStorage.getItem('bdaylunch')
         daytype = 'd'
-        select = false
-    } else {
-        daySelect()
-    }
-}
-function eday() {
-    if (select) {
-        document.getElementById('selectora').style.display = 'none'
-        document.getElementById('selectorb').style.display = 'none'
-        document.getElementById('selectorc').style.display = 'none'
-        document.getElementById('selectord').style.display = 'none'
-        lunchtype = localStorage.getItem('bdaylunch')
-        daytype = 'e'
         select = false
     } else {
         daySelect()
@@ -154,17 +132,15 @@ function render() {
 
     var periods = classes
     
-    var adaya = ["7:10", "7:40", "7:45", "9:15", "9:25", "10:05", "10:10", "10:55", "11:00", "12:30", "12:40", "14:10", "23:59"]
-    var adayb = ["7:10", "7:40", "7:45", "9:15", "9:25", "10:05", "10:10", "11:40", "11:45", "12:30", "12:40", "14:10", "23:59"]
-    var bdaya = ["7:10", "7:40", "7:45", "9:15", "9:25", "10:05", "10:10", "10:55", "11:00", "12:30", "12:40", "14:10", "23:59"]
-    var bdayb = ["7:10", "7:40", "7:45", "9:15", "9:25", "10:05", "10:10", "11:40", "11:45", "12:30", "12:40", "14:10", "23:59"]
-    var cdaya = ["7:10", "7:56", "8:04", "8:50", "8:58", "9:44", "9:52", "10:38", "10:43", "11:24", "11:29", "12:15", "12:24", "13:10", "23:59"]
-    var cdayb = ["7:10", "7:56", "8:04", "8:50", "8:58", "9:44", "9:52", "10:38", "10:43", "11:29", "11:34", "12:15", "12:24", "13:10", "23:59"]
-    var ddaya = ["7:10", "8:06", "8:14", "9:10", "9:18", "10:14", "10:22", "11:18", "11:23", "12:05", "12:10", "13:06", "13:14", "14:10", "23:59"]
-    var ddayb = ["7:10", "8:06", "8:14", "9:10", "9:18", "10:14", "10:22", "11:18", "11:23", "12:19", "12:24", "13:06", "13:14", "14:10", "23:59"]
+    var adaya = ["7:05", "7:30", "7:35", "9:05", "9:15", "9:55", "10:00", "10:45", "10:50", "12:20", "12:30", "14:00", "23:59"]
+    var adayb = ["7:05", "7:30", "7:35", "9:05", "9:15", "9:55", "10:00", "11:30", "11:35", "12:20", "12:30", "14:00", "23:59"]
+    var bdaya = ["7:05", "7:30", "7:35", "9:05", "9:15", "9:55", "10:00", "10:45", "10:50", "12:20", "12:30", "14:00", "23:59"]
+    var bdayb = ["7:05", "7:30", "7:35", "9:05", "9:15", "9:55", "10:00", "11:30", "11:35", "12:20", "12:30", "14:00", "23:59"]
+    var cdaya = ["7:05", "7:51", "7:58", "8:44", "8:51", "9:37", "9:44", "10:30", "10:35", "11:16", "11:21", "12:07", "12:14", "13:00", "23:59"]
+    var cdayb = ["7:05", "7:51", "7:58", "8:44", "8:51", "9:37", "9:44", "10:30", "10:35", "11:21", "11:26", "12:07", "12:14", "13:00", "23:59"]
+    var ddaya = ["7:05", "8:00", "8:08", "9:03", "9:11", "10:06", "10:14", "11:09", "11:14", "11:56", "12:01", "12:56", "13:04", "14:00", "23:59"]
+    var ddayb = ["7:05", "8:00", "8:08", "9:03", "9:11", "10:06", "10:14", "11:09", "11:14", "12:09", "12:14", "12:56", "13:04", "14:00", "23:59"]
     var oday = ["23:59"]
-    var edaya = ["7:10", "7:50", "7:55", "8:35", "8:40", "9:20", "9:25", "10:05", "10:10", "10:50", "10:55", "11:30", "11:35", "12:10", "23:59"]
-    var edayb = ["7:10", "7:50", "7:55", "8:35", "8:40", "9:20", "9:25", "10:05", "10:10", "10:50", "10:55", "11:30", "11:35", "12:10", "23:59"]
 
     var adayaC = ["Before School", "Flex", "Period 1 Transition", periods[0], "Research Transition", "Research", "Lunch Transition", "Lunch", "Period 2 Transition", periods[1], "Period 3 Transition", periods[2], "After School"]
     var adaybC = ["Before School", "Flex", "Period 1 Transition", periods[0], "Research Transition", "Research", "Period 2 Transition", periods[1], "Lunch Transition", "Lunch", "Period 3 Transition", periods[2], "After School"]
@@ -175,8 +151,6 @@ function render() {
     var ddayaC = ["Before School", periods[0], "Period 2 Transition", periods[1], "Period 3 Transition", periods[2], "Period 4 Transition", periods[3], "Lunch Transition", "Lunch", "Period 5 Transition", periods[4], "Period 6 Transition", periods[5], "After School"]
     var ddaybC = ["Before School", periods[0], "Period 2 Transition", periods[1], "Period 3 Transition", periods[2], "Period 4 Transition", periods[3], "Period 5 Transition", periods[4], "Lunch Transition", "Lunch", "Period 6 Transition", periods[5], "After School"]
     var odayC = ["It's the Weekend!"]
-    var edayaC = ["Before School", periods[0], "Period 2 Transition", periods[1], "Period 3 Transition", periods[2], "Period 4 Transition", periods[3], "Lunch Transition", "Lunch", "Period 5 Transition", periods[4], "Period 6 Transition", periods[5], "After School"]
-    var edaybC = ["Before School", periods[0], "Period 2 Transition", periods[1], "Period 3 Transition", periods[2], "Period 4 Transition", periods[3], "Period 5 Transition", periods[4], "Lunch Transition", "Lunch", "Period 6 Transition", periods[5], "After School"]
 
     function cTime(typeArray, classArrayParameter) {
         var instance = 0
@@ -269,12 +243,6 @@ function render() {
     }
     if (daytype === "o") {
         cTime(oday, odayC)
-    }
-    if (daytype === "e" && lunchtype === "a") {
-        cTime(edaya, edayaC)
-    }
-    if (daytype === "e" && lunchtype === "b") {
-        cTime(edayb, edaybC)
     }
 
     setTimeout(render, 13)
