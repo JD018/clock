@@ -1,23 +1,23 @@
 function setaluncha() {
     localStorage.setItem('adaylunch', 'a')
-    document.getElementById('1').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('2').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('1').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('2').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
 }
 function setbluncha() {
     localStorage.setItem('adaylunch', 'b')
-    document.getElementById('2').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('1').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('2').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('1').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
 }
 
 function setalunchb() {
     localStorage.setItem('bdaylunch', 'a')
-    document.getElementById('3').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('4').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('3').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('4').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
 }
 function setblunchb() {
     localStorage.setItem('bdaylunch', 'b')
-    document.getElementById('4').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
-    document.getElementById('3').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('4').style = 'background-color: rgb(255, 255, 255); color: rgb(0, 0, 0);'
+    document.getElementById('3').style = 'background-color: rgb(0, 0, 0); color: rgb(255, 255, 255);'
 }
 
 function setlegacy() {
