@@ -37,23 +37,10 @@
             <button class="selector" onclick="bday()" id="selectorb">B-Day</button>
             <button class="selector" onclick="cday()" id="selectorc">C-Day</button>
             <button class="selector" onclick="dday()" id="selectord">D-Day</button>
-            <button class="selector" onclick="eday()" id="selectore">E-Day</button>
             
         </div>
     
         <script src="./scripts/run.js"></script>
-        <script>
-            ddayoverride = true
-            if (ddayoverride === true) {
-                document.getElementById('selectora').style.display = 'none'
-                document.getElementById('selectorb').style.display = 'none'
-                document.getElementById('selectorc').style.display = 'none'
-                document.getElementById('selectore').style.display = 'none'
-                lunchtype = localStorage.getItem('bdaylunch')
-                daytype = 'd'
-                alert("Custom D-Day Configuration currently in effect.")
-            }
-        </script>
         <script>
             if (window.addEventListener) {
     var keys = [],
