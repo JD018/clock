@@ -60,6 +60,24 @@
 };
         </script>
         <script>
+            if (window.addEventListener) {
+    var key2s = [],
+        konami2 = "38,38,40,40,37,39,37,39,65,66,13";
+
+    window.addEventListener("keydown", function(k){
+
+        key2s.push(k.keyCode);
+
+        if (key2s.toString().indexOf(konami2) >= 0) {
+
+            document.documentElement.requestFullscreen();
+
+            key2s = [];
+        };
+    }, true);
+};
+        </script>
+        <script>
             if (typeof navigator.serviceWorker !== 'undefined') {
               navigator.serviceWorker.register('sw.js')
             }
