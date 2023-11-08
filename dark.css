@@ -96,7 +96,7 @@ html {
 }
 .remaining {
     font-family: monospace;
-    font-size: 17px;
+    font-size: 28px;
     background-color: transparent;
     border-style: solid;
     border-color: rgb(228, 104, 104);
@@ -114,7 +114,7 @@ html {
 }
 .remaining:hover {
     font-family: monospace;
-    font-size: 22px;
+    font-size: 32px;
     background-color: transparent;
     border-style: solid;
     border-color: rgb(228, 104, 104);
